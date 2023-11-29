@@ -1,0 +1,356 @@
+.head {
+    width: 100%;
+    height: auto;
+}
+
+p, h1, h2, h3, ul, label {
+    font-family: sans-serif;
+    color: black;
+}
+
+.back {
+    background-image: url("../img/sanmames2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.back_camp {
+    background-image: url("../img/campo.PNG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.back_camp_jug {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../img/sanmames3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.contenido {
+    padding: 30px;
+    margin: 15px 10%;
+    background-color: white;
+}
+
+.navegacion {
+    text-align: center;
+}
+
+.navegacion a {
+    display: inline-block;
+    margin: 12px 4%;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgba(255, 53, 53, 0.689);
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: rgba(255, 225, 225, 0.4);
+    transition: background-color 0.3s ease;
+}
+.navegacion a:hover {
+    background-color: rgba(255, 200, 200, 0.8);
+}
+
+.navegacion hr {
+    border-top: 4px solid #ff8484;
+    margin: 0;
+}
+
+/* texto descripcion */
+.text p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    font-size: 16px;
+}
+.text {
+    padding: 10px 5%;
+    border-radius: 10px;
+    background-color: rgb(255, 225, 225);
+}
+
+/* transicion del section para "Jugadoras Destacadas" */
+.contenido section {
+    display: flex;
+    margin: 10px 10% 10px;
+    width: 80%;
+    height: 350px;
+}
+
+.contenido section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: 1s ease;
+}
+
+.contenido section img:hover {
+    width: 150px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+/* estilos para el documento jugadpras.html */
+.contenido_jug {
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido_jug a {
+    align-items: center;
+    height: auto;
+    width: 20%;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contenido_jug a img {
+    width: 80%;
+    height: auto;
+    display: block;
+    align-self: center;
+}
+
+.contenido_jug p {
+    padding-left: 5%;
+    color: rgb(207, 52, 52);
+}
+
+.contenido_jug b {
+    font-size: 25px;
+    color: rgb(130, 0, 0);
+}
+
+/* estilos para los documentos jugadoraX.html */
+.juga {
+    margin: 10px 10% 10px;
+    margin-right: 10%;
+    width: 90%;
+    margin-right: 10%;
+}
+
+.juga .text{
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-right: 5%;
+    height: 20%;
+    background-color: rgb(255, 234, 234);
+}
+
+.juga .juga1{
+    display: flex;
+    margin-right: 5%;
+}
+
+.juga img {
+    margin-top: 5%;
+    width: 40%;
+    height: 40%;
+    max-width: 700px;
+    padding-right: 10%;
+}
+
+.juga ul {
+    font-size: 18px;
+    max-height: 400px;
+    margin-top: 10%;
+    margin-right: 5%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+}
+
+.cont {
+    padding: 5%;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider img, video {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: scale-down;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+/* Estilos del documento formulario.html */
+.contenido body {
+    font-family: sans-serif;
+    min-height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido form {
+    margin: 10%;
+    padding: 5% 5%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 70%;
+}
+
+.contenido  .input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contenido h2 {
+    color: #362828;
+    font-size: 35px;
+}
+
+.contenido label {
+    color: #362828;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 15px 25px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    background-color: #ffeded;
+    border: 2px solid #faf0f0;
+    color: #362828;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #cab5b5;
+}
+
+.bton {
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 25px;
+    background-color: #d94c4c;
+    box-shadow: 0 0 20px rgba(254, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.bton:hover {
+    background-color: #ff3838;
+}
+
+form img {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 8%;
+    padding-bottom: 10px;
+}
+
+.redes {
+    display: flex;
+}
+
+.redes p {
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes img {
+    width: 45px;
+    height: 45px;
+}
+
+form a {
+    align-items: center;
+    height: auto;
+    width: 20%;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #d94c4c;
+}
+
+/* estilos del documento noticias.html */
+.contenido .noti {
+    border-radius: 20px;
+    background-color: rgb(255, 196, 196);
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.noti p {
+    font-size: 15px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.noti a {
+    float: right;
+    padding-right: 5%;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(197, 0, 0);
+    font-size: 13px;
+}
+
+.noti img {
+    width: 30%;
+    height: 30%;
+}
+
+.noti_text {
+    margin-left: 5%;
+}
